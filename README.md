@@ -1,8 +1,7 @@
 # Automated-Configuration-of-Zabbix-Agent-2-using-Ansible-Playbooks-Offline
 This guide will provide you with the necessary steps to install and utilize Zabbix Agent 2 for data collection and transmission to your proxy in an offline environment.
 
-![image](https://user-images.githubusercontent.com/129797537/231611093-ac72a88a-c1eb-434f-bba2-be502af45bb5.png)
-
+![image](https://user-images.githubusercontent.com/19797537/231611178-71ee630b-c6a6-44f7-b483-704914d9627a.png)
 
 # Introduction :
 
