@@ -5,7 +5,7 @@ This guide will provide you with the necessary steps to install and utilize Zabb
 
 To start, it's important to understand why Ansible is a valuable tool for server configuration management. It can be a difficult and tedious process to manually install and configure servers, which is why Ansible is used to simplify and streamline this process. Additionally, Ansible requires minimal resources, as it only needs to be installed on a single host server and can then be used to manage other servers.
 
-2)- Install zabbix agent 2 :
+2) Install zabbix agent 2 :
 For many reasons of security, we avoid allowing internet servers so that why we will install a zabbix-agent 2 and put it in /tmp.
 
 On host server:
