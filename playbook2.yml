@@ -1,0 +1,20 @@
+- hosts: all
+  gather_facts: yes
+  tasks:
+      - name: Remove zabbix config file
+        become: yes
+        file:
+            path: /etc/zabbix/zabbix_agent2.conf
+            state: absent
+
+      - name: Create new zabbix config file from template
+        become: yes
+        template:
+            src: "/templates/zabbix_agent2.conf.j1"
+            dest: "/etc/zabbix/zabbix_agent2.conf"
+
+      - name: Start service zabbix-agent
+        become: yes
+        service:
+            name: zabbix-agent2
+            state: started
