@@ -1,0 +1,25 @@
+- hosts: all
+  become: true
+  tasks:
+    - name: Copy local zabbix package to target servers
+      copy:
+        src: /tmp/zabbix-release_6.2-4+ubuntu20.04_all.deb
+        dest: /tmp/
+    - name: Install zabbix repo from local repository
+      apt:
+        deb: /tmp/zabbix-release_6.2-4+ubuntu20.04_all.deb
+        state: present
+
+    - name: Update package cache
+      apt:
+        update_cache: yes
+    - name: Install zabbix agent
+      apt:
+        name: zabbix-agent2
+        state: present
+    - name: Start service zabbix-agent2
+      become: yes
+      service:
+          name: zabbix-agent2
+          state: started
+
