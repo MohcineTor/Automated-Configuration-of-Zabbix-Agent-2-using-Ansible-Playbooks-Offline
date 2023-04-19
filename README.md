@@ -12,6 +12,8 @@ For many reasons of security, we avoid allowing internet servers so that why we 
 
 On host server:
 
+        wget https://repo.zabbix.com/zabbix/6.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.2-4%2Bubuntu20.04_all.deb
+
 ![image](https://user-images.githubusercontent.com/129797537/231609051-26d8f8f1-9d0f-46d2-8541-a83f57a5f9f7.png)
 
 Now in Ansible directory we will set up a playbook to install the agent in other servers:
